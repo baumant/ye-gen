@@ -151,9 +151,9 @@ template { display: none; }
 
 #ye-gen .container img { width: 100%; display: block; }
 
-#ye-gen .container .area { resize: none; outline: none; border: 0; display: block; width: 20%; padding: 0; position: absolute; top: 0; font-size: 30px; text-align: center; color: #29F74E; }
+#ye-gen .container .area { resize: none; outline: none; border: 0; display: block; width: 44%; padding: 0; position: absolute; top: 0; font-size: 30px; text-align: center; color: #29F74E; }
 
-@media all and (max-width: 600px) { #ye-gen .container .area { font-size: 16px; width: 25%; } }
+@media all and (max-width: 600px) { #ye-gen .container .area { font-size: 16px; } }
 
 #ye-gen .container textarea { left: 50%; height: 100%; background: transparent; transform: translateX(-50%); }
 
