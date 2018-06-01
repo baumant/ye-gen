@@ -1,0 +1,86 @@
+#ye-gen{
+  $green: #29F74E;
+  h1,p,textarea,textarea::placeholder,a{
+    font-family: 'JakeHandwriting';
+  }
+  h1{
+    text-align: center;
+  }
+  p{
+    margin: 0;
+    color: $green;
+  }
+  .container{
+    position: relative;
+    max-width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    @media all and (max-width: $screen-medium){
+      width: 100%;
+      max-width: none;
+    }
+    img{
+      width: 100%;
+      display: block;
+    }
+    .area{
+      resize: none;
+      outline: none;
+      border: 0;
+      display: block;
+      width: 100%;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      font-size: 30px;
+      text-align: center;
+      color: $green;
+    }
+    textarea{
+      left: 0;
+      height: 100%;
+      background: transparent;
+      @media all and (max-width: $screen-medium){
+        font-size: 16px;
+        max-width: 100%;
+      }
+      &::placeholder{
+        color: $green;
+      }
+    }
+    .dummy{
+      left: 100%;
+      visibility: hidden;
+    }
+    
+  }
+  .save-img{
+    width: 100px;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    p{
+      text-shadow: 1px black;
+    }
+    &:hover{
+      background: $green;
+      p{
+        color: black;
+      }
+    }
+  }
+  .powered{
+    color: $black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+    padding: 5px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
