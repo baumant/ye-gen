@@ -23,15 +23,18 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div id="ye-gen">
-      <h1>YE COVER GENERATOR</h1>
-      <div class="container" id="album-cover"><img src="img/blnak.jpg">
-        <div class="area dummy"></div>
-        <textarea class="area" name="message" autofocus="true" placeholder="write whatever you feel like"></textarea>
+    <div class="wrapper">
+      <div id="ye-gen">
+        <h1>YE COVER GENERATOR</h1>
+        <div id="canvas-container"></div>
+        <div class="container" id="album-cover"><img src="img/blnak.jpg">
+          <div class="area dummy"></div>
+          <textarea class="area" name="message" autofocus="true" placeholder="write whatever you feel like"></textarea>
+        </div>
+        <div class="save-img">
+          <p>Save Image  </p>
+        </div><a class="powered" href="http://tig.ht/" target="_blank">powered by tig.ht</a>
       </div>
-      <div class="save-img">
-        <p>Save Image</p>
-      </div><a class="powered" href="http://tig.ht/" target="_blank">powered by tig.ht</a>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
     <script src="js/html2canvas.min.js"></script>

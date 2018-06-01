@@ -23,21 +23,37 @@ $(function() {
   }
 
   $textarea.on( 'keyup change', function( event ) {
-    console.log('keyup');
     var html = formatDummyText( $textarea.val() );
     $dummy.html( html );
     positionTextarea();
   }).trigger('change');
 
+  $textarea.change(renderCanvas);
+
+  function renderCanvas(){
+    // $('#canvas-container').empty();
+
+    // html2canvas(document.querySelector("#album-cover")).then(function(canvas) {
+    //   $('#canvas-container').append(canvas);
+    //   $textarea.focus();
+    // });
+
+  }
+
   // should debounce this
   $( window ).on( 'resize', positionTextarea );
 
   $('.save-img').click(function(){
+    // $('#album-cover canvas').remove();
+
     html2canvas(document.querySelector("#album-cover")).then(function(canvas) {
+      // $('#album-cover').prepend(canvas);
       canvas.toBlob(function(blob) {
         saveAs(blob, "My-YE-cover.png"); 
       });
     });
   })
+
+  $textarea.focus();
 
 });

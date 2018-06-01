@@ -143,6 +143,8 @@ template { display: none; }
 
 #ye-gen p { margin: 0; color: #29F74E; }
 
+#ye-gen .wrapper { display: flex; align-items: center; min-height: 100vh; }
+
 #ye-gen .container { position: relative; max-width: 50%; margin: 0 auto; overflow: hidden; }
 
 @media all and (max-width: 600px) { #ye-gen .container { width: 100%; max-width: none; } }
@@ -167,6 +169,6 @@ template { display: none; }
 
 #ye-gen .save-img:hover p { color: black; }
 
-#ye-gen .powered { color: #000000; position: absolute; bottom: 0; right: 0; text-decoration: none; padding: 5px; }
+#ye-gen .powered { color: #000000; position: fixed; bottom: 0; right: 0; text-decoration: none; padding: 5px; }
 
 #ye-gen .powered:hover { text-decoration: underline; }
