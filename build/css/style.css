@@ -137,17 +137,15 @@ template { display: none; }
 
 @font-face { font-family: 'JakeHandwriting'; src: url(YungJakesNewHandwriting-Regular.ttf); }
 
-#ye-gen h1, #ye-gen p, #ye-gen textarea, #ye-gen textarea::placeholder, #ye-gen a { font-family: 'JakeHandwriting'; }
+.wrapper { display: flex; align-items: center; min-height: 100vh; }
 
-#ye-gen h1 { text-align: center; }
+#ye-gen p, #ye-gen textarea, #ye-gen textarea::placeholder, #ye-gen a { font-family: 'JakeHandwriting'; }
 
 #ye-gen p { margin: 0; color: #29F74E; }
 
-#ye-gen .wrapper { display: flex; align-items: center; min-height: 100vh; }
-
 #ye-gen .container { position: relative; max-width: 50%; margin: 0 auto; overflow: hidden; }
 
-@media all and (max-width: 600px) { #ye-gen .container { width: 100%; max-width: none; } }
+@media all and (max-width: 600px) { #ye-gen .container { width: 90%; max-width: none; } }
 
 #ye-gen .container img { width: 100%; display: block; }
 
@@ -161,7 +159,7 @@ template { display: none; }
 
 #ye-gen .container .dummy { left: 100%; visibility: hidden; }
 
-#ye-gen .save-img { width: 100px; margin: 10px auto; text-align: center; padding: 10px; border: 1px solid; border-radius: 5px; cursor: pointer; }
+#ye-gen .save-img { width: 100px; margin: 10px auto; text-align: center; padding: 10px; border: 2px solid #636363; border-radius: 5px; cursor: pointer; }
 
 #ye-gen .save-img p { text-shadow: 1px black; }
 

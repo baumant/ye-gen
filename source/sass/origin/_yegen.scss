@@ -1,19 +1,16 @@
+.wrapper{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
 #ye-gen{
   $green: #29F74E;
-  h1,p,textarea,textarea::placeholder,a{
+  p,textarea,textarea::placeholder,a{
     font-family: 'JakeHandwriting';
-  }
-  h1{
-    text-align: center;
   }
   p{
     margin: 0;
     color: $green;
-  }
-  .wrapper{
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
   }
   #canvas-container{
     // width: 100%;
@@ -25,7 +22,7 @@
     margin: 0 auto;
     overflow: hidden;
     @media all and (max-width: $screen-medium){
-      width: 100%;
+      width: 90%;
       max-width: none;
     }
     img{
@@ -68,7 +65,7 @@
     margin: 10px auto;
     text-align: center;
     padding: 10px;
-    border: 1px solid;
+    border: 2px solid #636363;
     border-radius: 5px;
     cursor: pointer;
     p{

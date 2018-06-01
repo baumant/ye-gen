@@ -28,7 +28,7 @@ $(function() {
     positionTextarea();
   }).trigger('change');
 
-  $textarea.change(renderCanvas);
+  // $textarea.change(renderCanvas);
 
   function renderCanvas(){
     // $('#canvas-container').empty();
@@ -47,7 +47,7 @@ $(function() {
     // $('#album-cover canvas').remove();
 
     html2canvas(document.querySelector("#album-cover")).then(function(canvas) {
-      // $('#album-cover').prepend(canvas);
+      // $('#album-cover').append(canvas);
       canvas.toBlob(function(blob) {
         saveAs(blob, "My-YE-cover.png"); 
       });
