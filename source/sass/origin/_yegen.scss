@@ -35,22 +35,23 @@
       outline: none;
       border: 0;
       display: block;
-      width: 100%;
+      width: 20%;
       padding: 0;
       position: absolute;
       top: 0;
       font-size: 30px;
       text-align: center;
       color: $green;
-    }
-    textarea{
-      left: 0;
-      height: 100%;
-      background: transparent;
       @media all and (max-width: $screen-medium){
         font-size: 16px;
-        max-width: 100%;
+        width: 25%;
       }
+    }
+    textarea{
+      left: 50%;
+      height: 100%;
+      background: transparent;
+      transform: translateX(-50%);
       &::placeholder{
         color: $green;
       }

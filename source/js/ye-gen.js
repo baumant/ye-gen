@@ -1,5 +1,5 @@
 $(function() {
-  
+  console.log('timothybauman.com');
   function formatDummyText( text ) {
     if ( !text ) {
       return '&nbsp;';
