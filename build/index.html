@@ -4,13 +4,31 @@
     <title>ye cover generator</title>
     <meta charset="UTF-8">
     <meta name="description" content="Create your own YE album cover">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1">
     <meta name="robots" content="index, follow">
+    <!-- favicon stuff-->
+    <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="fav/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <!-- Open Graph Tags -->
     <meta property="og:title" content="ye cover generator">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="http://yegenerator.com/">
-    <meta property="og:image" content="http://yegenerator.com/img/kanye-west-ye-album-cover-1527857034-compressed.jpg">
+    <meta property="og:url" content="http://yenerator.com/">
+    <meta property="og:image" content="http://yenerator.com/img/social.jpg">
     <meta property="og:description" content="Create your own YE album cover">
     <meta property="og:site_name" content="ye cover generator">
     <!-- Twitter Card Tags : Images must be at least 120x120px-->
@@ -18,21 +36,23 @@
     <meta name="twitter:site" content="ye cover generator">
     <meta name="twitter:title" content="ye cover generator">
     <meta name="twitter:description" content="Create your own YE album cover">
-    <meta name="twitter:image" content="http://yegenerator.com/img/kanye-west-ye-album-cover-1527857034-compressed.jpg">
+    <meta name="twitter:image" content="http://yenerator.com/img/social.jpg">
     <!-- Styles-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"><!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39816128-7"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-39816128-7');</script>
   </head>
   <body>
     <div class="wrapper">
       <div id="ye-gen">
-        <div id="canvas-container"></div>
         <div class="container" id="album-cover"><img src="img/blnak1.jpg">
-          <div class="area dummy"></div>
-          <textarea class="area" name="message" autofocus="true" placeholder="write whatever you feel like"></textarea>
+          <div class="area dummy">write whatever <br>you feel like</div>
+          <textarea class="area" name="message" autofocus spellcheck="false" placeholder="write whatever you feel like"></textarea>
         </div>
         <div class="save-img">
           <p>Save Image  </p>
-        </div><a class="powered" href="http://tig.ht/" target="_blank">powered by tig.ht</a>
+        </div>
+        <div class="streaming"><a href="https://itunes.apple.com/us/album/ye/1392975931" target="_blank"><img class="apple" src="img/apple-music.svg"></a><a href="https://open.spotify.com/album/5EBGCvO6upi3GNknMVe9x9" target="_blank"><img class="spotify" src="img/spotify.svg"></a><a href="https://tidal.com/browse/album/89768255" target="_blank"><img class="tidal" src="img/tidal.svg"></a><a href="https://itunes.apple.com/us/album/ye/1392975931" target="_blank"><img class="apple" src="img/itunes.svg"></a><a href="https://play.google.com/store/music/album/Kanye_West_ye" target="_blank"><img class="spotify" src="img/google-play.svg"></a><a href="https://www.amazon.com/dp/B07DGGP1FY" target="_blank"><img class="tidal" src="img/amazon.svg"></a><a href="https://www.pandora.com/artist/kanye-west/ye-explicit/ALzKpdJK2hjxrh2" target="_blank"><img class="apple" src="img/pandora.svg"></a><a href="http://www.deezer.com/album/64930472" target="_blank"><img class="spotify" src="img/soundcloud.svg"></a><a href="https://soundcloud.com/kanyewest/sets/ye-47" target="_blank"><img class="tidal" src="img/deezer.svg"></a></div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
