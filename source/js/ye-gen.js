@@ -1,8 +1,10 @@
+console.log('timothybauman.com');
+
 $(function() {
-  console.log('timothybauman.com');
+
   function formatDummyText( text ) {
     if ( !text ) {
-      return '&nbsp;';
+      return 'write whatever <br>you feel like';
     }
     return text.replace( /\n$/, '<br>&nbsp;' )
       .replace( /\n/g, '<br>' );
@@ -28,32 +30,17 @@ $(function() {
     positionTextarea();
   }).trigger('change');
 
-  // $textarea.change(renderCanvas);
-
-  function renderCanvas(){
-    // $('#canvas-container').empty();
-
-    // html2canvas(document.querySelector("#album-cover")).then(function(canvas) {
-    //   $('#canvas-container').append(canvas);
-    //   $textarea.focus();
-    // });
-
-  }
-
   // should debounce this
   $( window ).on( 'resize', positionTextarea );
 
   $('.save-img').click(function(){
-    // $('#album-cover canvas').remove();
-
+    window.scrollTo(0, 0);
     html2canvas(document.querySelector("#album-cover")).then(function(canvas) {
-      // $('#album-cover').append(canvas);
+      
       canvas.toBlob(function(blob) {
         saveAs(blob, "My-YE-cover.png"); 
       });
     });
   })
-
-  $textarea.focus();
 
 });

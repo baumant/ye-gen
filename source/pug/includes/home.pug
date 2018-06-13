@@ -1,10 +1,27 @@
 .wrapper
   #ye-gen
-    #canvas-container
     .container#album-cover
       img(src="img/blnak1.jpg")
-      .area.dummy
-      textarea.area(name="message" autofocus="true" placeholder="write whatever you feel like")
+      .area.dummy write whatever <br>you feel like
+      textarea.area(name="message" autofocus spellcheck="false" placeholder="write whatever you feel like")
     .save-img
       p Save Image  
-    a.powered(href="http://tig.ht/" target="_blank") powered by tig.ht
+    .streaming
+      a(href="https://itunes.apple.com/us/album/ye/1392975931" target="_blank")
+        img(src="img/apple-music.svg").apple
+      a(href="https://open.spotify.com/album/5EBGCvO6upi3GNknMVe9x9" target="_blank")
+        img(src="img/spotify.svg").spotify
+      a(href="https://tidal.com/browse/album/89768255" target="_blank")
+        img(src="img/tidal.svg").tidal
+      a(href="https://itunes.apple.com/us/album/ye/1392975931" target="_blank")
+        img(src="img/itunes.svg").apple
+      a(href="https://play.google.com/store/music/album/Kanye_West_ye" target="_blank")
+        img(src="img/google-play.svg").spotify
+      a(href="https://www.amazon.com/dp/B07DGGP1FY" target="_blank")
+        img(src="img/amazon.svg").tidal
+      a(href="https://www.pandora.com/artist/kanye-west/ye-explicit/ALzKpdJK2hjxrh2" target="_blank")
+        img(src="img/pandora.svg").apple
+      a(href="http://www.deezer.com/album/64930472" target="_blank")
+        img(src="img/soundcloud.svg").spotify
+      a(href="https://soundcloud.com/kanyewest/sets/ye-47" target="_blank")
+        img(src="img/deezer.svg").tidal

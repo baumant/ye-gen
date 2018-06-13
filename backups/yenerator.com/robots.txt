@@ -1,0 +1,3 @@
+User-agent: googlebot
+Disallow: /unicorn.html
+Sitemap: https://unicorn.com/sitemap.xml
