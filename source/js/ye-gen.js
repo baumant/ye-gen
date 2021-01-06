@@ -43,4 +43,23 @@ $(function() {
     });
   })
 
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      
+      reader.onload = function (e) {
+        $('#bg').attr('src', e.target.result);
+      }
+      
+      reader.readAsDataURL(input.files[0]);
+      setTimeout(function() {
+        positionTextarea();
+      }, 100);
+    }
+  }
+  
+  $("#file").change(function(){
+    readURL(this);
+  });
+
 });

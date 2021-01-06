@@ -135,7 +135,7 @@ template { display: none; }
 /** Add the correct display in IE 10-. */
 [hidden] { display: none; }
 
-@font-face { font-family: 'JakeHandwriting'; src: url(YungJakesNewHandwriting-Regular.ttf); }
+@font-face { font-family: 'JakeHandwriting'; src: url(Bi_polarHandwriting-Regular.ttf); }
 
 .wrapper { display: flex; align-items: center; min-height: 100vh; }
 
@@ -171,11 +171,19 @@ template { display: none; }
 
 #ye-gen .container .dummy { left: 100%; visibility: hidden; }
 
-#ye-gen .save-img { width: 100px; margin: 10px auto; text-align: center; padding: 10px; border-radius: 5px; cursor: pointer; background: #395B85; }
+#ye-gen .buttons { display: flex; align-items: center; justify-content: center; }
 
-#ye-gen .save-img p { text-shadow: 1px black; }
+#ye-gen .buttons .save-img { width: 100px; margin: 10px; text-align: center; padding: 10px; border-radius: 5px; cursor: pointer; background: #395B85; }
 
-#ye-gen .save-img:hover { background: #2a4361; }
+#ye-gen .buttons .save-img p { text-shadow: 1px black; }
+
+#ye-gen .buttons .save-img:hover { background: #2a4361; }
+
+#ye-gen .buttons form .inputfile { width: 0.1px; height: 0.1px; opacity: 0; overflow: hidden; position: absolute; z-index: -1; }
+
+#ye-gen .buttons form label { width: 100px; margin: 10px; text-align: center; padding: 10px; border-radius: 5px; cursor: pointer; background: #395B85; text-shadow: 1px black; color: #29F74E; font-family: 'JakeHandwriting'; }
+
+#ye-gen .buttons form label:hover { background: #2a4361; }
 
 #ye-gen .powered { color: #000000; position: fixed; bottom: 0; right: 0; text-decoration: none; padding: 5px; display: none; }
 

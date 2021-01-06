@@ -45,12 +45,18 @@
   <body>
     <div class="wrapper">
       <div id="ye-gen">
-        <div class="container" id="album-cover"><img src="img/blnak1.jpg">
+        <div class="container" id="album-cover"><img id="bg" src="img/blnak1.jpg">
           <div class="area dummy">write whatever <br>you feel like</div>
           <textarea class="area" name="message" autofocus spellcheck="false" placeholder="write whatever you feel like"></textarea>
         </div>
-        <div class="save-img">
-          <p>Save Image  </p>
+        <div class="buttons">
+          <div class="save-img">
+            <p>Save Image  </p>
+          </div>
+          <form id="form1" runat="server">
+            <input class="inputfile" type="file" name="file" id="file" accept="image/*">
+            <label for="file">Choose a Background</label>
+          </form>
         </div>
         <div class="streaming"><a href="https://itunes.apple.com/us/album/ye/1392975931" target="_blank"><img class="apple" src="img/apple-music.svg"></a><a href="https://open.spotify.com/album/5EBGCvO6upi3GNknMVe9x9" target="_blank"><img class="spotify" src="img/spotify.svg"></a><a href="https://tidal.com/browse/album/89768255" target="_blank"><img class="tidal" src="img/tidal.svg"></a><a href="https://itunes.apple.com/us/album/ye/1392975931" target="_blank"><img class="apple" src="img/itunes.svg"></a><a href="https://play.google.com/store/music/album/Kanye_West_ye" target="_blank"><img class="spotify" src="img/google-play.svg"></a><a href="https://www.amazon.com/dp/B07DGGP1FY" target="_blank"><img class="tidal" src="img/amazon.svg"></a><a href="https://www.pandora.com/artist/kanye-west/ye-explicit/ALzKpdJK2hjxrh2" target="_blank"><img class="apple" src="img/pandora.svg"></a><a href="http://www.deezer.com/album/64930472" target="_blank"><img class="spotify" src="img/soundcloud.svg"></a><a href="https://soundcloud.com/kanyewest/sets/ye-47" target="_blank"><img class="tidal" src="img/deezer.svg"></a></div>
       </div>

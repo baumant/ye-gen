@@ -81,21 +81,52 @@
     }
     
   }
-  .save-img{
-    width: 100px;
-    margin: 10px auto;
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    background: #395B85;
-    p{
-      text-shadow: 1px black;
+  .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .save-img{
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      background: #395B85;
+      p{
+        text-shadow: 1px black;
+      }
+      &:hover{
+        background: darken(#395B85, 10%);
+      }
     }
-    &:hover{
-      background: darken(#395B85, 10%);
+    form{
+      .inputfile {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+      }
+      label {
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        background: #395B85;
+        text-shadow: 1px black;
+        color: $green;
+        font-family: 'JakeHandwriting';
+        &:hover{
+          background: darken(#395B85, 10%);
+        }
+      }
     }
   }
+    
   .powered{
     color: $black;
     position: fixed;

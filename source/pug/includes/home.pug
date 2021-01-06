@@ -1,11 +1,16 @@
 .wrapper
   #ye-gen
     .container#album-cover
-      img(src="img/blnak1.jpg")
+      img#bg(src="img/blnak1.jpg")
       .area.dummy write whatever <br>you feel like
       textarea.area(name="message" autofocus spellcheck="false" placeholder="write whatever you feel like")
-    .save-img
-      p Save Image  
+    .buttons
+      .save-img
+        p Save Image  
+      form(id="form1" runat="server")
+        input(type='file' name="file" id="file" class="inputfile" accept="image/*")
+        label(for="file") Choose a Background
+          
     .streaming
       a(href="https://itunes.apple.com/us/album/ye/1392975931" target="_blank")
         img(src="img/apple-music.svg").apple
