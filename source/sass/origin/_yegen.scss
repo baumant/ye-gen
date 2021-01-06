@@ -9,7 +9,7 @@
 #ye-gen{
   width: 100%;
   $green: #29F74E;
-  p,textarea,textarea::placeholder,a{
+  p,.text,.text::placeholder,a{
     font-family: 'JakeHandwriting';
   }
   p{
@@ -59,7 +59,7 @@
       }
       
     }
-    textarea{
+    .text{
       left: 50%;
       height: 100%;
       background: transparent;
@@ -74,6 +74,9 @@
           font-size: 11px;
         }
       }
+    }
+    [contentEditable=true]:empty:before{
+      content:attr(data-text)
     }
     .dummy{
       left: 100%;

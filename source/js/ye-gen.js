@@ -2,6 +2,8 @@ console.log('timothybauman.com');
 
 $(function() {
 
+  document.querySelector(".text").focus();
+
   function formatDummyText( text ) {
     if ( !text ) {
       return 'write whatever <br>you feel like';
@@ -11,7 +13,7 @@ $(function() {
   }
 
   var $wrap = $('#album-cover');
-  var $textarea = $('textarea');
+  var $textarea = $('.text');
   var $dummy = $('.dummy');
 
   
@@ -36,7 +38,6 @@ $(function() {
   $('.save-img').click(function(){
     window.scrollTo(0, 0);
     html2canvas(document.querySelector("#album-cover")).then(function(canvas) {
-      
       canvas.toBlob(function(blob) {
         saveAs(blob, "My-YE-cover.png"); 
       });

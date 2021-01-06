@@ -143,7 +143,7 @@ template { display: none; }
 
 #ye-gen { width: 100%; }
 
-#ye-gen p, #ye-gen textarea, #ye-gen textarea::placeholder, #ye-gen a { font-family: 'JakeHandwriting'; }
+#ye-gen p, #ye-gen .text, #ye-gen .text::placeholder, #ye-gen a { font-family: 'JakeHandwriting'; }
 
 #ye-gen p { margin: 0; color: #29F74E; }
 
@@ -161,13 +161,15 @@ template { display: none; }
 
 @media all and (max-width: 600px) { #ye-gen .container .area { font-size: 11px; } }
 
-#ye-gen .container textarea { left: 50%; height: 100%; background: transparent; transform: translateX(-50%); }
+#ye-gen .container .text { left: 50%; height: 100%; background: transparent; transform: translateX(-50%); }
 
-#ye-gen .container textarea::placeholder { color: #29F74E; font-size: 24px; }
+#ye-gen .container .text::placeholder { color: #29F74E; font-size: 24px; }
 
-@media all and (max-width: 980px) { #ye-gen .container textarea::placeholder { font-size: 19px; } }
+@media all and (max-width: 980px) { #ye-gen .container .text::placeholder { font-size: 19px; } }
 
-@media all and (max-width: 600px) { #ye-gen .container textarea::placeholder { font-size: 11px; } }
+@media all and (max-width: 600px) { #ye-gen .container .text::placeholder { font-size: 11px; } }
+
+#ye-gen .container [contentEditable=true]:empty:before { content: attr(data-text); }
 
 #ye-gen .container .dummy { left: 100%; visibility: hidden; }
 
